@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+        <div id="container">
+          <span class="logo">⭐</span>
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All feedback is
+            appreciated to help us improve our offering!
+          </p>
+          <div class="rating">
+            <button class="star" id="1" onclick="rating_btn(1)">1</button>
+            <button class="star" id="2" onclick="rating_btn(2)">2</button>
+            <button class="star" id="3" onclick="rating_btn(3)">3</button>
+            <button class="star" id="4" onclick="rating_btn(4)">4</button>
+            <button class="star" id="5" onclick="rating_btn(5)">5</button>
+          </div>
+          <a class="btn" onclick="switchTo()">Submit</a>
+        </div>
+        <div id="second_container">
+          <div class="svg"><img src="/images/illustration-thank-you.svg" /></div>
+          <p id="rating_text"></p>
+          <h2>Thank you!</h2>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+          <div id="arrow" onclick="switchBack()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+            <path fill-rule="evenodd" d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z" clip-rule="evenodd" />
+          </svg>
+          </div>
+        </div>
+      
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+  </body>
+</html>
